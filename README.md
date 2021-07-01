@@ -1,4 +1,4 @@
-# real-world-vue
+# insta-ramen
 
 ## Project setup
 ```
