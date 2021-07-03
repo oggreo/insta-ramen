@@ -2,8 +2,10 @@
   <div id="nav">
     <div id="orange-strip"></div>
     <div id="nav-logo">
-      <img src="./assets/logo.png" alt="" />
-      InstaRamen
+      <img src="./assets/ramen_logo.png" alt="" />
+      <div id="nav-logo-text">
+        InstaRamen
+      </div>
     </div>
   </div>
   <div id="app">
@@ -35,6 +37,9 @@
 #nav-logo {
   width: inherit;
   height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img {

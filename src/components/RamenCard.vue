@@ -39,7 +39,7 @@ export default {
 .ramen-card {
   padding: 20px;
   width: 650px;
-  cursor: pointer;
+  /*cursor: pointer;*/
   border: 1px solid #39495c;
   margin-bottom: 18px;
   display: flex;

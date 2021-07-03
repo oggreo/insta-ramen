@@ -3,7 +3,7 @@
     {
       "id": 123,
       "category": "animal welfare",
-      "title": "Tan-tan men",
+      "title": "Special instant ramen",
       "description": "Find your new feline friend at this event.",
       "location": "Meow Town",
       "date": "January 28, 2022",
@@ -31,7 +31,7 @@
     {
       "id": 789,
       "category": "sustainability",
-      "title": "Beach Cleanup",
+      "title": "Oh men",
       "description": "Help pick up trash along the shore.",
       "location": "Playa Del Carmen",
       "date": "July 22, 2022",
@@ -45,7 +45,7 @@
     {
       "id": 1001,
       "category": "animal welfare",
-      "title": "Dog Adoption Day",
+      "title": "A men",
       "description": "Find your new canine friend at this event.",
       "location": "Woof Town",
       "date": "August 28, 2022",
@@ -59,7 +59,7 @@
     {
       "id": 1002,
       "category": "food",
-      "title": "Canned Food Drive",
+      "title": "That's a good O men",
       "description": "Bring your canned food to donate to those in need.",
       "location": "Tin City",
       "date": "September 14, 2022",
@@ -73,7 +73,7 @@
     {
       "id": 1003,
       "category": "sustainability",
-      "title": "Highway Cleanup",
+      "title": "I don't know you men",
       "description": "Help pick up trash along the highway.",
       "location": "Highway 50",
       "date": "July 22, 2022",
