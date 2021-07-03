@@ -1,6 +1,8 @@
 <template>
   <div class="ramen-card">
-    <div id="ramen-image"></div>
+    <div id="ramen-image">
+      <img src="../assets/ramen_logo.png" alt="">
+    </div>
 
     <router-link
       class="event-link"
@@ -37,13 +39,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .ramen-card {
-  padding: 20px;
+  padding-right: 20px;
+  height: 150px;
   width: 650px;
-  /*cursor: pointer;*/
   border: 1px solid #39495c;
-  margin-bottom: 18px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .ramen-card:hover {
@@ -57,8 +60,9 @@ export default {
 }
 
 #ramen-image {
-  width: 100px;
-  border: 1px solid #39495c;
+  width: 200px;
+  height: 150px;
+  border-right: 1px solid #39495c;
 }
 
 #like-button {

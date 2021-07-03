@@ -5,8 +5,9 @@
       @click="toggleUpButton"
       id="up-arrow"
     ></div>
-    {{ count }}
-<!--    {{ like }}-->
+    <div :style="likeTextColor">
+      {{ count }}
+    </div>
     <div
       :style="{ visibility: isPushedDown === false ? 'visible' : 'hidden' }"
       id="down-arrow"
@@ -24,6 +25,13 @@ export default {
       isPushedDown: false,
       count: this.like
     };
+  },
+  computed: {
+    likeTextColor: function() {
+      return {
+        color: this.isPushedUp ? "green" : this.isPushedDown ? "red" : ""
+      };
+    }
   },
   methods: {
     toggleUpButton() {

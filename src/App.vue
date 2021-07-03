@@ -24,7 +24,7 @@
 
 #nav {
   width: 100%;
-  height: 50px;
+  height: 75px;
   border-bottom: solid 1px gray;
 }
 
