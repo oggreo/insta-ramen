@@ -32,13 +32,13 @@
 <script>
 // @ is an alias to /src
 // import EventCard from "@/components/EventCard.vue";
-import RamenCard from '@/components/RamenCard.vue'
-import EventServices from '../services/EventServices.js'
-import { watchEffect } from 'vue'
+import RamenCard from "@/components/RamenCard.vue";
+import EventServices from "../services/EventServices.js";
+import { watchEffect } from "vue";
 
 export default {
-  name: 'Ramenlist',
-  props: ['page'],
+  name: "RamenList",
+  props: ["page"],
   components: {
     RamenCard
   },
@@ -46,31 +46,31 @@ export default {
     return {
       ramens: null,
       totalEvents: 0
-    }
+    };
   },
   created() {
     watchEffect(() => {
       // when reactive objects that are accessed inside this function change,
       // run this function again
 
-      this.ramens = null // clears the card
+      this.ramens = null; // clears the card
       EventServices.getEvents(4, this.page)
         .then(response => {
-          this.ramens = response.data
-          this.totalEvents = response.headers['x-total-count']
+          this.ramens = response.data;
+          this.totalEvents = response.headers["x-total-count"];
         })
         .catch(error => {
-          console.log(error)
-        })
-    })
+          console.log(error);
+        });
+    });
   },
   computed: {
     hasNextPage() {
-      const totalPages = Math.ceil(this.totalEvents / 4)
-      return this.page < totalPages
+      const totalPages = Math.ceil(this.totalEvents / 4);
+      return this.page < totalPages;
     }
   }
-}
+};
 </script>
 
 <style scoped>

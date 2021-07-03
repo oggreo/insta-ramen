@@ -1,21 +1,18 @@
 <template>
   <div class="ramen-card">
-    <div id="ramen-image">
-    </div>
-    
+    <div id="ramen-image"></div>
+
     <router-link
       class="event-link"
-      :to="{ name: 'EventDetails', params: { id: ramen.id} }"
+      :to="{ name: 'EventDetails', params: { id: ramen.id } }"
     >
       <!-- <img src="../assets/logo.png" alt= {{ ramen.title }} width="20px" height="20px"> -->
       <h4>{{ ramen.title }}</h4>
-      <div id="details"> 
-        {{ ramen.cooking_time }} | {{ ramen.diet }}
-      </div>
+      <div id="details">{{ ramen.cooking_time }} | {{ ramen.diet }}</div>
     </router-link>
 
-    <div id='like-button'> 
-      <LikeButton />
+    <div id="like-button">
+      <LikeButton like="{{ ramen.like }}"> </LikeButton>
     </div>
   </div>
 </template>
@@ -34,7 +31,7 @@ export default {
   components: {
     LikeButton
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -68,5 +65,4 @@ export default {
   display: flex;
   align-items: center;
 }
-
 </style>
