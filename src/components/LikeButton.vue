@@ -5,8 +5,8 @@
       @click="toggleUpButton"
       id="up-arrow"
     ></div>
-    {{ count }}
-    <!-- {{ like.count }} -->
+<!--    {{ count }}-->
+    {{ like }}
     <div
       :style="{ visibility: isPushedDown === false ? 'visible' : 'hidden' }"
       id="down-arrow"
@@ -47,7 +47,7 @@ export default {
   },
   props: {
     like: {
-      type: Object,
+      type: Number,
       required: true
     }
   }

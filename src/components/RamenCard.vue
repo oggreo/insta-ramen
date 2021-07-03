@@ -8,11 +8,11 @@
     >
       <!-- <img src="../assets/logo.png" alt= {{ ramen.title }} width="20px" height="20px"> -->
       <h4>{{ ramen.title }}</h4>
-      <div id="details">{{ ramen.cooking_time }} | {{ ramen.diet }}</div>
+      <div id="details">{{ ramen.cooking_time }} min | {{ ramen.diet }}</div>
     </router-link>
 
     <div id="like-button">
-      <LikeButton like="{{ ramen.like }}"> </LikeButton>
+      <LikeButton :like="ramen.like"> </LikeButton>
     </div>
   </div>
 </template>
