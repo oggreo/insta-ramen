@@ -1,5 +1,5 @@
 # insta-ramen
 
-Recipes to hyper charge your instant ramen. 
+Recipe website to hypercharge your instant ramen. 
 
 Developed using Vue3.
